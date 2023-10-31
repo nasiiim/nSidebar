@@ -1,0 +1,54 @@
+.list-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+.list-items .menu-bars {
+  /* margin-top: 30px; */
+  margin: 0px 5px 30px 90px;
+  color: #fff;
+  font-size: 15px;
+}
+.list-items .name-item {
+  color: #fff;
+  text-decoration: none;
+}
+.list-items .list-item {
+  width: 166px;
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 6px 1px 4px 12px;
+  margin-top: 5px;
+}
+.list-items .list-item .image-icon {
+  cursor: pointer;
+}
+.list-items .list-item-collapsed {
+  width: 166px;
+  height: 36px;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: flex-end;
+  align-items: center;
+  padding: 6px 1px 4px 12px;
+  margin-top: 5px;
+  transition: 500ms;
+  cursor: pointer;
+}
+.list-items .list-item:hover {
+  border-radius: 7px;
+  background-color: rgba(149, 149, 216, 0.1);
+}
+.list-items hr {
+  width: 160px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=SidebarMenuItems.css.map */

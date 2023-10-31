@@ -1,0 +1,17 @@
+$colors:(
+    dark:#060923,
+    light:#3d3f4c,
+    text:#fff,
+);
+$trans-time: 500ms;
+
+span {
+    margin-left: 15px;
+  }
+
+  .menu-bars {
+    /* margin-top: 30px; */
+    margin: 0px 5px 30px 90px;
+    color: map-get($colors , text);
+    font-size: 15px;
+}
