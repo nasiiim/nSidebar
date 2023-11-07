@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 
-import { SidebarItem, SpecialSidebarItem } from '../SidebarMenuItems/SidebarMenuItems.types';
+import { SidebarItem, SidebarMenuItemsProps, SpecialSidebarItem } from '../SidebarMenuItems/SidebarMenuItems.types';
 
-// import StateIcon2 from '../../images/State=Open (1).svg';
 import './Sidebar.css';
 
 import { useTheme } from '../../context/theme2.context';
@@ -11,53 +10,49 @@ import { SidebarMenuItems } from '../SidebarMenuItems';
 import { UserProfile } from '../UserProfile';
 import { ThemeSelector } from '../ThemeSelector';
 import { SidebarProps } from './Sidebar.types';
+import { SidebarHeaderProps } from '../SidebarHeader/SidebarHeader.types';
+import { UserProfileProps } from '../UserProfile/UserProfile.types';
+import { ThemeSelectorProps } from '../ThemeSelector/ThemeSelector.types';
 
 
 
-export const Sidebar: React.FC<SidebarProps> = ({ sidebarTitle,
-    themeColor,
+const Sidebar: React.FC<SidebarProps> = ({ sidebarTitle,
     items,
-    imageUrl,
-    UserName, }) => {
+    userProfileAvatar,
+    userName, }) => {
     const [sidebar, setSidebar] = useState(true);
     const showSidebar = () => setSidebar(!sidebar);
     const { theme, setTheme } = useTheme();
-    // const toggleTheme = () => {
-    //     setTheme(themeColor === 'dark' ? 'light' : 'dark');
-    // };
 
-    const sidebarHeaderProps = {
+    const sidebarHeaderProps: SidebarHeaderProps = {
         sidebarTitle: sidebarTitle,
-        sidebar,
-        theme,
         showSidebar
     };
 
-    const sidebarMenuItemsProps = {
+    const sidebarMenuItemsProps: SidebarMenuItemsProps = {
         sidebar,
         items
     };
 
-    const userProfileProps = {
-        imageUrl: imageUrl,
-        UserName: UserName
+    const userProfileProps: UserProfileProps = {
+        userProfileAvatar: userProfileAvatar,
+        userName: userName
     };
 
-    const themeSelectorProps = {
+    const themeSelectorProps: ThemeSelectorProps = {
         theme,
         setTheme
     };
 
     return (
-       
         <div className={sidebar ? `container-${theme} active` : `container-${theme}`}>
             <SidebarHeader {...sidebarHeaderProps} />
             <SidebarMenuItems {...sidebarMenuItemsProps} />
             <UserProfile {...userProfileProps} />
             <ThemeSelector {...themeSelectorProps} />
         </div>
-        
+
     );
 };
 
-// export default Sidebar;
+export default Sidebar;

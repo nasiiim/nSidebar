@@ -9,12 +9,7 @@ $trans-time: 500ms;
   display: flex;
 }
 
-
-
-// * {
-//     margin: 0;
-//   }
-  
+ 
   .container-dark {
     width: 204px;
     height: 100vh;
@@ -44,7 +39,6 @@ $trans-time: 500ms;
 
   .container-light {
     width: 204px;
-    /* height: 750px; */
     height: 100vh;
     background-color: map-get($colors , light);
     @include display-flex();
@@ -67,9 +61,4 @@ $trans-time: 500ms;
       }
   }
   
-  // .theme-btn{
-  //   cursor:no-drop;
-  //   width: 50px;
-  //   border: 1px;
-  //   border-radius: 5px;
-  // }
+ 

@@ -1,7 +1,7 @@
 
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Sidebar } from "./Sidebar";
+import  Sidebar  from "./Sidebar";
 import { SidebarItem, SpecialSidebarItem } from '../SidebarMenuItems/SidebarMenuItems.types';
 import { ThemeProvider } from '../../context/theme2.context';
 import Home from '../../image/home.svg';
@@ -36,9 +36,8 @@ const exampleItems: (SidebarItem | SpecialSidebarItem)[] = [
 export const Primary: Story = {
     args: {
         sidebarTitle: "Farsim.gmbh",
-        themeColor: 'dark',
         items: exampleItems,
-        imageUrl: 'https://via.placeholder.com/150',
-        UserName: 'Nasim ghalebi',
+        userProfileAvatar: 'https://via.placeholder.com/150',
+        userName: 'Nasim ghalebi',
     },
 };
