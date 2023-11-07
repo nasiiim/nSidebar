@@ -11,7 +11,6 @@ export interface SidebarItem {
   icon?: string,
   routePath: string,
   type: SidebarItemType,
-  // sidebar: boolean
 }
 
 export interface SpecialSidebarItem {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { SidebarMenuItemsProps,SidebarItem } from './SidebarMenuItems.types'
+import { SidebarMenuItemsProps, SidebarItem } from './SidebarMenuItems.types'
 
 import './SidebarMenuItems.css'
 
@@ -9,7 +9,7 @@ const SidebarMenuItems: React.FC<SidebarMenuItemsProps> = ({ items, sidebar }) =
         <ul className='list-items'>
             {items.map((item, index) => {
                 if (item.type === 1) {
-                    const normalItem= item as SidebarItem;
+                    const normalItem = item as SidebarItem;
                     if (sidebar) {
                         return (
                             <li className='list-item' key={index}>
@@ -33,7 +33,7 @@ const SidebarMenuItems: React.FC<SidebarMenuItemsProps> = ({ items, sidebar }) =
                 }
 
             })}
-           
+
         </ul>
     )
 }
