@@ -1,6 +1,6 @@
 
 
 export interface UserProfileProps{
-    imageUrl?: string;
-    UserName?: string
+    userProfileAvatar?: string;
+    userName?: string
 }
