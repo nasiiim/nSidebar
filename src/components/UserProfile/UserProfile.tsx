@@ -1,13 +1,13 @@
-import React from 'react'
-import { UserProfileProps } from './UserProfile.types'
+import React from 'react';
+import { UserProfileProps } from './UserProfile.types';
 
-import './UserProfile.css'
+import './UserProfile.css';
 
-const UserProfile : React.FC<UserProfileProps> = ({imageUrl, UserName }) => {
+const UserProfile : React.FC<UserProfileProps> = ({userProfileAvatar, userName }) => {
     return (
         <div className='div-user-icon'>
-            <img className='user-image' src={imageUrl} alt={'user icon'} />
-             <div>{UserName}</div>
+            <img className='user-image' src={userProfileAvatar} alt={'user icon'} />
+             <div>{userName}</div>
         </div>
     )
 }

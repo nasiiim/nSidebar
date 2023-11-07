@@ -17,8 +17,8 @@ export const Default: {
   args: UserProfileProps,
 } = {
   args: {
-    imageUrl: 'https://via.placeholder.com/150',
-    UserName: 'Nasim Ghalebi',
+    userProfileAvatar: 'https://via.placeholder.com/150',
+    userName: 'Nasim Ghalebi',
   },
 };
 
@@ -26,7 +26,7 @@ export const NoImage: {
   args: UserProfileProps,
 } = {
   args: {
-    UserName: 'John Doe',
+    userName: 'John Doe',
   },
 };
 
@@ -34,6 +34,6 @@ export const NoName: {
   args: UserProfileProps,
 } = {
   args: {
-    imageUrl: 'https://via.placeholder.com/150',
+    userProfileAvatar: 'https://via.placeholder.com/150',
   },
 };
