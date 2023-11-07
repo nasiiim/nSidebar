@@ -4,9 +4,9 @@ import * as FaIcons from "react-icons/fa6";
 import { SidebarHeaderProps } from './SidebarHeader.types';
 
 
-import './SidebaHeader.css'
+import './SidebarHeader.css'
 
-const SidebarHeader: React.FC<SidebarHeaderProps> = ({ sidebarTitle, theme, sidebar, showSidebar }) => {
+const SidebarHeader: React.FC<SidebarHeaderProps> = ({ sidebarTitle, showSidebar }) => {
   return (
     <div>
       <span>{sidebarTitle}</span>
